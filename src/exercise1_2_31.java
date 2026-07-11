@@ -14,11 +14,9 @@ public class exercise1_2_31 {
         double denom = 1 - Math.sin(latitude);
 
         double x = longitude - lambda_0;
-        double y = (0.5) * (num / denom);
+        double y = (0.5) * Math.log(num / denom);
 
         System.out.println(x + ", " + y);
-
-        System.out.println(Math.toRadians(x) + ", " + Math.toRadians(y));
 
     }
 }
