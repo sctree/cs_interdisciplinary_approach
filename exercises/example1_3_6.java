@@ -1,0 +1,12 @@
+public class example1_3_6 {
+    public static void main(String[] args) {
+        // Find the square root using Newton's method
+        double c = Double.parseDouble(args[0]);
+        double EPSILON = 1e-15;
+        double t = c;
+        while (Math.abs(t - c/t) > EPSILON * t) {
+            t = (c/t + t) / 2.0;
+        }
+        System.out.println(t);
+    }
+}
